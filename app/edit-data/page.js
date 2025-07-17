@@ -35,7 +35,7 @@ const createData = (names) =>
     reading3: "",
   }));
 
-export default function ReadingsForm() {
+export default function page() {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
   const router = useRouter();
@@ -158,6 +158,7 @@ export default function ReadingsForm() {
   }
 
   return (
+    <Suspense fallback={<div className="p-4">Loading form...</div>}>
     <div className="p-4 md:p-6 max-w-7xl mx-auto">
       <h1 className="text-2xl font-semibold mb-4">
         {id ? "📝 Edit Readings" : "📥 Enter New Readings"}
@@ -229,5 +230,6 @@ export default function ReadingsForm() {
 
       <SubmitButton onClick={handleSubmit} />
     </div>
+    </Suspense>
   );
 }
