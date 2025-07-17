@@ -1,4 +1,4 @@
-import { db } from "@/lib/firebase-admin";
+import { db } from "@/lib/firestore";
 
 export async function GET(req) {
   try {

@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google-cloud/firestore": "^7.11.3",
     "axios": "^1.10.0",
     "cally": "^0.8.0",
     "crypto-js": "^4.2.0",
     "daisyui": "^5.0.46",
     "dom-to-image": "^2.6.0",
     "file-saver": "^2.0.5",
-    "firebase-admin": "^13.4.0",
     "html2canvas": "^1.4.1",
     "next": "15.3.5",
     "react": "^19.0.0",

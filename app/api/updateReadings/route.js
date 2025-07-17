@@ -1,4 +1,4 @@
-import { db } from "@/lib/firebase-admin"; // or your DB logic
+import { db } from "@/lib/firestore"; // or your DB logic
 
 export async function PUT(req) {
   const { searchParams } = new URL(req.url);
