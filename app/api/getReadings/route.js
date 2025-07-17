@@ -2,12 +2,13 @@ import { db } from "@/lib/firestore";
 
 export async function GET(req) {
   try {
+    console.log("reached the fcn")
     const { searchParams } = new URL(req.url);
     const startDate = searchParams.get("start"); // optional
     const endDate = searchParams.get("end");     // optional
 
     let query = db.collection("meterReadings");
-
+    console.log("Got the data:",query)
     // Apply range filters if dates provided
     if (startDate) {
       query = query.where("date", ">=", startDate);
