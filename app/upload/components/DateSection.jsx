@@ -2,7 +2,7 @@ import React from "react";
 
 const DateSection = ({ date, setDate, name, setName }) => (
   <section>
-    <h2 className="text-xl font-bold mb-4 border-b pb-1">Entry Details</h2>
+    <h2 className="text-xl font-bold mb-4 border-b pb-1">Enter Details</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* Date Picker */}
       <div className="space-y-1">

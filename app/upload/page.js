@@ -205,7 +205,7 @@ const Page = () => {
   };
 
   return (
-    <div className="p-8 bg-gray-50 min-h-screen space-y-10">
+    <div className="p-1 bg-gray-50 min-h-screen space-y-10">
       <DateSection
         date={date}
         setDate={setDate}

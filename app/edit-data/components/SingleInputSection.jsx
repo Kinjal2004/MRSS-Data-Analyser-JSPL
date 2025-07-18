@@ -16,7 +16,7 @@ const SingleInputSection = ({ sectionTitle, entries, setEntries }) => {
   return (
     <div className="border p-4 rounded shadow bg-white">
       <h2 className="text-lg font-semibold mb-3">{sectionTitle}</h2>
-      <div className="flex gap-8 space-y-2">
+      <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
         {entries.map((item, index) => (
           <div key={item.name} className="flex gap-4 items-center">
             <label className="w-40">{item.name}</label>

@@ -158,10 +158,7 @@ export default function PageContent() {
   }
 
   return (
-    <div className="p-4 md:p-6 max-w-7xl mx-auto">
-      <h1 className="text-2xl font-semibold mb-4">
-        {id ? "📝 Edit Readings" : "📥 Enter New Readings"}
-      </h1>
+    <div className="p-1 bg-gray-50 min-h-screen space-y-10">
 
       <DateSection
         date={date}

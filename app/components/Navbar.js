@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="sticky top-0 z-50">
       <div className="navbar bg-gray-100 shadow-sm">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown relative">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="h-5 w-5"
@@ -23,7 +23,7 @@ const Navbar = () => {
               </svg>
             </div>
             <ul tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
+                className="menu menu-sm dropdown-content bg-gray-100 rounded-box z-[999] mt-3 w-52 p-2 shadow">
               <li><NavbarLink href="/upload">Upload</NavbarLink></li>
               <li><NavbarLink href="/energy-consumption">Energy Consumption</NavbarLink></li>
               <li><NavbarLink href="/production">Production</NavbarLink></li>
