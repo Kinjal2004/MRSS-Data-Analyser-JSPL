@@ -38,7 +38,8 @@ const CumulativeGraphs = ({ data }) => {
       </div>
     );
   }
-
+  //Sorting Data in Ascending order of date
+  data.sort((a,b)=>(a.date>b.date)?1:-1)
   // Flatten for plotting
   const flattenedData = data.map((item) => ({
     date: item.date

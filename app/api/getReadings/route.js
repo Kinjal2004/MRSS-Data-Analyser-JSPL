@@ -8,7 +8,6 @@ export async function GET(req) {
     const endDate = searchParams.get("end");     // optional
 
     let query = db.collection("meterReadings");
-    console.log("Got the data:",query)
     // Apply range filters if dates provided
     if (startDate) {
       query = query.where("date", ">=", startDate);
@@ -19,7 +18,7 @@ export async function GET(req) {
     }
 
     // Important: You must order by the field you're filtering on
-    query = query.orderBy("date", "desc").limit(30);
+    query = query.orderBy("date", "desc").limit(365);
 
     const snapshot = await query.get();
 
