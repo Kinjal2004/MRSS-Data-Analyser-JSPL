@@ -18,8 +18,7 @@ export async function GET(req) {
     }
 
     // Important: You must order by the field you're filtering on
-    query = query.orderBy("date", "desc").limit(365);
-
+    query = query.orderBy("date", "desc").limit(30);
     const snapshot = await query.get();
 
     const results = snapshot.docs.map((doc) => ({
